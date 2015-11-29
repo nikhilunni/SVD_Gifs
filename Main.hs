@@ -50,7 +50,7 @@ compress (u,s,v) k = trans $ (takeColumns k u) <>
 
 getGifFrames :: (Matrix Double, Matrix Double, Matrix Double) -> [Image PixelRGB8]
 getGifFrames (r,g,b) = frames ++ (reverse frames)
-  where frames = [fromRGBMatrices (compress svdR n, compress svdR n, compress svdB n) | n <- list]
+  where frames = [fromRGBMatrices (compress svdR n, compress svdG n, compress svdB n) | n <- list]
         svdR = fullSVD r
         svdG = fullSVD g
         svdB = fullSVD b
