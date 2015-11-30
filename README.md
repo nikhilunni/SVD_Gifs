@@ -5,7 +5,6 @@ Animate images with Singular Value Decomposition
 <img src="https://github.com/nikhilunni/SVD_Gifs/blob/master/screenshots/animated.gif" width="300">
 
 
-<img src="" width="300">
 
 ### Description
 This program animates images into GIFs where the frames have varying amounts of compression levels. 
